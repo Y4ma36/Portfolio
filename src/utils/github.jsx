@@ -14,7 +14,7 @@ export const github = [
     name: "School Project",
     address: "https://github.iu.edu/elijkim?tab=repositories",
     overView: [
-      "I've gathered a collection of school projects I've completed independently as well as collaboratively with others",
+      "I've gathered a collection of school projects and completed independently as well as collaboratively with others",
       "JAVA, C, SpringBoot, Docker, C#, PYTHON, HTML, JAVASCRIPT",
     ],
     githubLogo: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
