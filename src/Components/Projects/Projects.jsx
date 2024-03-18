@@ -182,8 +182,14 @@ const SectionInfo = styled.div`
   width: calc(100% - 8.4rem);
   font-size: 18px;
   a {
-    text-decoration: none;
     color: #74b9ff;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background-color: inherit;
+    color: #74b9ff;
+    font-size: 18px;
   }
   @media ${({ theme }) => theme.device.laptop} {
     font-size: 15px;
@@ -278,9 +284,13 @@ const Projects = () => {
                       <ProjectsTableList>
                         <SectionName>URL</SectionName>
                         <SectionInfo>
-                          <Link to={project.detail.URL}>
+                          <button
+                            onClick={() => {
+                              window.open(project.detail.URL);
+                            }}
+                          >
                             {project.detail.URL}
-                          </Link>
+                          </button>
                         </SectionInfo>
                       </ProjectsTableList>
                       <ProjectsTableList>
