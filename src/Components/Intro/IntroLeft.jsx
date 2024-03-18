@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const Wrapper = styled.div`
   color: ${({ theme }) => theme.colors.white};
@@ -108,7 +109,11 @@ export const IntroLeft = () => {
         <br /> I'm a developer aspiring to become a full-stack web developer. My
         goal is to continuously evolve and grow while working together.
       </Message>
-      <MoreInfoBtn>More Information &darr;</MoreInfoBtn>
+      <MoreInfoBtn>
+        <Link to="aboutme" spy={true} smooth={true} offset={-65}>
+          More Information &darr;
+        </Link>
+      </MoreInfoBtn>
     </Wrapper>
   );
 };
